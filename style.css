@@ -1,0 +1,408 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+nav{
+    background:#111827;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo{
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("assets/images/background.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:22px;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 30px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+nav ul li{
+margin:10px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:25px;
+    box-shadow:0 0 20px rgba(255,255,255,.4);
+}
+.about{
+    padding:80px 10%;
+    background:#f8f9fa;
+}
+
+.about h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#222;
+}
+
+.about-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.about-text{
+    max-width:700px;
+}
+
+.about-content{
+    display: block;
+    text-align: center;
+}
+
+.about-content h3{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+.about-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:25px;
+}
+.education{
+    padding:80px 10%;
+    background:#eef4ff;
+}
+
+.education h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.education-container{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.edu-card{
+    width:320px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.edu-card:hover{
+    transform:translateY(-8px);
+}
+
+.edu-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+.projects{
+    padding:80px 10%;
+    background:#ffffff;
+}
+
+.projects h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    width:350px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    color:#2563eb;
+    padding:20px 20px 10px;
+}
+
+.project-card p{
+    padding:0 20px 20px;
+    line-height:1.6;
+}
+.project-btn{
+    display:block;
+    width:150px;
+    margin:20px auto;
+    padding:10px;
+    text-align:center;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.project-btn:hover{
+    background:#1d4ed8;
+}
+.contact{
+    padding:80px 10%;
+    background:#eef4ff;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    width:250px;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+}
+
+.contact-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin-left: 30px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body{
+    padding-top: 90px;
+}
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.social-links{
+    margin-top:20px;
+}
+
+.social-links a{
+    color:white;
+    font-size:32px;
+    margin:0 18px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    color:#2563eb;
+    transform:scale(1.2);
+}
+.skills{
+    padding:80px 10%;
+    text-align:center;
+    background:white;
+    color:black;
+}
+
+.skills h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.skill{
+    background:#1e90ff;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:scale(1.1);
+    background:#00bfff;
+}
+.project-card {
+    text-align: center;
+}
+
+.project-card p,
+.project-card h3 {
+    text-align: left;
+}
+
+.project-card .btn {
+    display: inline-block;
+    margin: 20px auto 0;
+}
