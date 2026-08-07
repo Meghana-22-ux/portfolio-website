@@ -40,14 +40,12 @@ nav ul li a:hover{
     color:#38bdf8;
 }
 section{
-    min-height:100vh;
-    padding:100px 10%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    
+    padding:80px 10%;
+    
 }
 .hero{
-    min-height:100vh;
+
     padding-top:100px;
     background:
     linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
@@ -103,7 +101,7 @@ section{
     }
 
     .hero{
-        min-height:100vh;
+        
         padding:100px 20px 40px;
         background-position:center;
     }
@@ -164,7 +162,7 @@ section{
     box-shadow:0 0 20px rgba(255,255,255,.4);
 }
 .about{
-    padding:80px 10%;
+    padding:60px 10%;
     background:#f8f9fa;
 }
 
@@ -204,7 +202,7 @@ section{
     margin-bottom:25px;
 }
 .education{
-    padding:80px 10%;
+    padding:60px 10%;
     background:#eef4ff;
 }
 
@@ -239,7 +237,7 @@ section{
     margin-bottom:15px;
 }
 .projects{
-    padding:80px 10%;
+    padding:60px 10%;
     background:#ffffff;
 }
 
@@ -304,7 +302,7 @@ section{
     background:#1d4ed8;
 }
 .contact{
-    padding:80px 10%;
+    padding:60px 10%;
     background:#eef4ff;
     text-align:center;
 }
