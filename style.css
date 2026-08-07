@@ -81,84 +81,7 @@ section{
 .btn:hover{
     background:#1d4ed8;
 }
-@media (max-width:768px){
 
-    .navbar{
-        padding:15px 20px;
-        flex-direction:column;
-    }
-
-    .navbar ul{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-        margin-top:10px;
-    }
-
-    .navbar ul li{
-        margin:0;
-    }
-
-    .hero{
-    min-height:100vh;
-    padding:40px 20px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background-position:center;
-}
-
-    .profile{
-        width:240px;
-        height:240px;
-    }
-
-    .hero h1{
-    font-size:54px;
-    font-weight:700;
-    margin:20px 0 10px;
-}
-
-    .hero p{
-        font-size:22px;
-        margin-bottom:20px;
-    }
-
-    .btn{
-        font-size:18px;
-        padding:15px 35px;
-    }
-
-    .social-links a{
-        font-size:42px;
-        margin:0 15px;
-    }
-
-    .education-container,
-    .project-container,
-    .contact-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .edu-card,
-    .project-card,
-    .contact-card{
-        width:100%;
-        max-width:350px;
-    }
-
-    .skills-container{
-        gap:12px;
-    }
-
-    .skill{
-        font-size:18px;
-        padding:12px 24px;
-    }
-}
 .profile{
     width:220px;
     height:220px;
@@ -169,7 +92,8 @@ section{
     box-shadow:0 0 20px rgba(255,255,255,.4);
 }
 .about{
-    padding:60px 10%;
+    min-height:100vh;
+    padding:90px 10%;
     background:#f8f9fa;
 }
 
@@ -209,7 +133,8 @@ section{
     margin-bottom:25px;
 }
 .education{
-    padding:60px 10%;
+    min-height:100vh;
+    padding:90px 10%;
     background:#eef4ff;
 }
 
@@ -244,7 +169,8 @@ section{
     margin-bottom:15px;
 }
 .projects{
-    padding:60px 10%;
+    min-height:100vh;
+    padding:90px 10%;
     background:#ffffff;
 }
 
@@ -309,7 +235,8 @@ section{
     background:#1d4ed8;
 }
 .contact{
-    padding:60px 10%;
+    padding:90px 10%;
+    min-height:100vh;
     background:#eef4ff;
     text-align:center;
 }
@@ -416,7 +343,8 @@ footer{
     transform:scale(1.2);
 }
 .skills{
-    padding:80px 10%;
+    padding:90px 10%;
+    min-height:100vh;
     text-align:center;
     background:white;
     color:black;
@@ -466,4 +394,71 @@ html{
 
 section{
     scroll-margin-top:80px;
+}
+@media (max-width:768px){
+
+    .navbar{
+        padding:15px 20px;
+        flex-direction:column;
+    }
+
+    .navbar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:10px;
+    }
+
+    .navbar ul li{
+        margin:0;
+    }
+
+    section,
+    .hero,
+    .about,
+    .education,
+    .skills,
+    .projects,
+    .contact{
+        min-height:100vh;
+        padding:80px 20px;
+    }
+
+    .profile{
+        width:240px;
+        height:240px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+    .btn{
+        font-size:18px;
+        padding:15px 35px;
+    }
+
+    .social-links a{
+        font-size:36px;
+        margin:0 12px;
+    }
+
+    .education-container,
+    .project-container,
+    .contact-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .edu-card,
+    .project-card,
+    .contact-card{
+        width:100%;
+        max-width:350px;
+    }
 }
