@@ -83,33 +83,80 @@ section{
 .btn:hover{
     background:#1d4ed8;
 }
-@media(max-width:768px){
+@media (max-width:768px){
 
-nav{
-flex-direction:column;
-}
+    .navbar{
+        padding:15px 20px;
+        flex-direction:column;
+    }
 
-nav ul{
-flex-direction:column;
-text-align:center;
-}
+    .navbar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:10px;
+    }
 
-nav ul li{
-margin:10px;
-}
+    .navbar ul li{
+        margin:0;
+    }
 
-.hero h1{
-font-size:40px;
-}
+    .hero{
+        min-height:100vh;
+        padding:100px 20px 40px;
+        background-position:center;
+    }
 
-.hero p{
-font-size:18px;
-}
+    .profile{
+        width:180px;
+        height:180px;
+    }
 
+    .hero h1{
+        font-size:72px;
+        margin-bottom:15px;
+    }
+
+    .hero p{
+        font-size:28px;
+    }
+
+    .btn{
+        font-size:18px;
+        padding:14px 30px;
+    }
+
+    .social-links a{
+        font-size:36px;
+    }
+
+    .education-container,
+    .project-container,
+    .contact-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .edu-card,
+    .project-card,
+    .contact-card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .skills-container{
+        gap:12px;
+    }
+
+    .skill{
+        font-size:18px;
+        padding:12px 24px;
+    }
 }
 .profile{
-    width:180px;
-    height:180px;
+    width:220px;
+    height:220px;
     border-radius:50%;
     border:5px solid white;
     object-fit:cover;
